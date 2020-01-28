@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>과제 - 2_column_layout</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    #wrap{
+      margin: 20px;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    #header {
+      height: 47px;
+      padding: 13px;
+      border: 2px solid #bfbfbf;
+      background-color: #e5e5e5;
+    }
+    #container {
+      margin-top: 15px;
+      padding: 42px 20px 25px;
+      border: 2px solid #bfbfbf;
+      background-color: #e5e5e5;
+    }
+    #container:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .snb {
+      float: left;
+      width: 180px;
+      height: 100px;
+      border: 1px solid #bfbfbf;
+      padding: 10px;
+      background-color: white;
+    }
+    #content {
+      float: left;
+      width: calc(100% - 180px);
+      height: 222px;
+      border: 1px solid #bfbfbf;
+      padding: 20px;
+      background-color: white;
+      text-align: center;
+    }
+    #footer {
+      margin-top: 15px;
+      padding: 20px;
+      border: 2px solid #bfbfbf;
+      background-color: #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    #wrap
+    <header id="header">#header</header>
+    <div id="container">
+      <nav class="snb">.snb</nav>
+      <div id="content">#content</div>
+    </div>
+    <footer id="footer">#footer</footer>
+  </div>
+</body>
+</html>

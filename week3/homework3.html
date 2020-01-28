@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>과제 - 이미지+하단텍스트</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    #wrap{
+      width: 900px;
+      margin: 10px auto;
+    }
+    .items {
+      border: 1px solid #c2c2c2;
+      padding: 14px;
+    }
+    .items:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .item {
+      float: left;
+      position:relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      list-style: none;
+    }
+    .item .inner {
+      display: inline-block;
+      width: 120px;
+    }
+    .item:nth-child(6n+1) {
+      padding-left: 0;
+    }
+    .item:nth-child(6n+6):after {
+      content: '';
+      position:absolute;
+      bottom: 0;
+      right: -15px;
+      display: inline-block;
+      width: 900px;
+      border-bottom: 1px solid #c2c2c2;
+    }
+    .img-wrap {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 10px;
+      background-image: url("https://dummyimage.com/120x120/e6e6e6/000000&text=No+Images");
+      background-position: center;
+      background-size: cover;
+    }
+    .img {
+      width: 100%;
+    }
+    .text-box {
+      height: 70px;
+    }
+    .text-box h1 {
+      font-size: 12px;
+      line-height: 150%;
+    }
+    .text-box time {
+      font-size: 11px;
+      line-height: 150%;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <ul class="items">
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="img_thumbnail.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="inner">
+          <div class="img-wrap">
+            <img class="img" src="empty.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h1>이미지 제목</h1>
+            <time>2010-12-24</time>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+sw.*
+
+yarn-error.log
+yarn-debug.log*
+
+#trash files
+.DS_Store
