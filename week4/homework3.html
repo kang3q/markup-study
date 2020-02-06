@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>국내숙박 검색조건 입력 위젯</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    .clearfix:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    body {
+      background-image: url("https://mtour.wd.wemakeprice.com/images/common/bg_visual_khotel.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #wrap {
+      margin: 0 10px;
+    }
+    h1 {
+      margin: 10px 0;
+      color: #fff;
+    }
+    .u-tb {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+    .u-td {
+      display: table-cell;
+    }
+    .field {
+      height: 52px;
+      padding: 16px 15px;
+      margin: 0 2px;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+    .field.sub-field {
+      padding-top: 10px;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+      text-align: right;
+    }
+    .sub-label {
+      margin-bottom: 2px;
+      font-size: 10px;
+      color: #999;
+    }
+    .search-box {
+      position:relative;
+      margin: 0 -2px;
+    }
+    .search-btn {
+      position:absolute;
+      left: 50%;
+      bottom: -31px;
+      margin-left: -31px;
+      width: 62px;
+      height: 62px;
+      border: 0;
+      color: transparent;
+      background: transparent;
+      background-image: url(images/search-icon-red.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>국내숙박</h1>
+    <div class="search-box">
+      <div class="u-tb">
+        <div class="u-td"><div class="field">경기도 전체 - 왜 글씨 가운데가 안맞는가?</div></div>
+      </div>
+      <div class="u-tb">
+        <div class="u-td">
+          <div class="field sub-field">
+            <div class="sub-label">체크인</div>
+            <time>20.02.12 (수)</time>
+          </div>
+        </div>
+        <div class="u-td">
+          <div class="field sub-field">
+            <div class="sub-label">체크아웃</div>
+            <time>20.02.13 (목)</time>
+          </div>
+        </div>
+      </div>
+      <div class="u-tb">
+        <div class="u-td">
+          <div class="field sub-field clearfix">
+            <div class="left">
+              <div class="sub-label">숙박인원</div>
+              <span>성인 2명</span>
+            </div>
+            <div class="right">
+              <div class="sub-label">객실 수</div>
+              <span>1개</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="search-btn">검색하기</button>
+    </div>
+  </div>
+</body>
+</html>

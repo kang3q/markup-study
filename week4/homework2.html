@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자주 찾는 도움말</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    .clearfix:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    #wrap {
+      margin: 0 10px;
+    }
+    .header {
+      border-bottom: 2px solid #333;
+    }
+    .header h1 {
+      float: left;
+      padding: 10px 0;
+      vertical-align: middle;
+      font-size: 24px;
+      color: #000;
+    }
+    .header .more {
+      float: right;
+      /*margin-top: 13px;*/
+      vertical-align: middle;
+      font-size: 14px;
+      color: #999;
+    }
+    .header .more:after {
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-left: 5px;
+      vertical-align: middle;
+      background-image: url("images/ico_btn_more.gif");
+      background-size: cover;
+    }
+    .list {
+    }
+    .item:before {
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      vertical-align: middle;
+      background-image: url("images/ico_question.gif");
+      background-size: cover;
+    }
+    .item {
+      padding: 14px 0;
+      border-bottom: 1px solid #ebebeb;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header class="header clearfix">
+      <h1>자주 찾는 도움말</h1>
+      <span class="more">float주고 상하중앙정렬 모르겠다. 전체보기</span>
+    </header>
+    <ul class="list">
+      <li class="item">스카이스캐너 예약 확인은 어디에서 하나요?</li>
+      <li class="item">스카이스캐너 예약 확인은 어디에서 하나요? --- 글자 높이가 중앙이 아니다.</li>
+      <li class="item">스카이스캐너 예약 확인은 어디에서 하나요?</li>
+      <li class="item">스카이스캐너 예약 확인은 어디에서 하나요?</li>
+      <li class="item">스카이스캐너 예약 확인은 어디에서 하나요?</li>
+    </ul>
+  </div>
+</body>
+</html>
