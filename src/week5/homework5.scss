@@ -109,10 +109,6 @@
   }
 }
 
-.header.open + .stack-layer {
-  left: 0;
-}
-
 .stack-layer {
   position: fixed;
   top: 0;
@@ -125,4 +121,8 @@
     position: relative;
     background-color: gray;
   }
+}
+
+.stack-layer.open {
+  left: 0;
 }

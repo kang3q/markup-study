@@ -111,10 +111,6 @@
   filter: invert(100%);
 }
 
-.header.open + .stack-layer {
-  left: 0;
-}
-
 .stack-layer {
   position: fixed;
   top: 0;
@@ -128,4 +124,8 @@
 .stack-layer .header {
   position: relative;
   background-color: gray;
+}
+
+.stack-layer.open {
+  left: 0;
 }

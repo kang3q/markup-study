@@ -10,13 +10,13 @@
 <body>
   <div id="wrap">
 
-    <header id="header" class="header search">
+    <header class="header search">
       <div class="cell side"><a href="#" class="ico ico-back uvc">뒤로</a></div>
       <div class="cell middle">찜 목록</div>
       <div class="cell side"><a onclick="showPopup(event)" href="#" class="ico ico-menu uvc">메뉴</a></div>
     </header>
 
-    <div class="stack-layer">
+    <div id="popup" class="stack-layer">
       <header class="header search">
         <div class="cell side"></div>
         <div class="cell middle">찜 목록 열었다</div>
@@ -27,13 +27,13 @@
   </div>
 
 <script>
-  var $header = document.getElementById('header')
+  var $popup = document.getElementById('popup')
   function showPopup(e) {
-    $header.classList.add('open')
+    $popup.classList.add('open')
     e.preventDefault()
   }
   function hidePopup(e) {
-    $header.classList.remove('open')
+    $popup.classList.remove('open')
     e.preventDefault()
   }
 </script>
