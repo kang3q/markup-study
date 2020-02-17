@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>스르륵 팝업 실습</title>
+  <link rel="stylesheet" href="homework5.css">
+</head>
+<body>
+  <div id="wrap">
+
+    <header id="header" class="header search">
+      <div class="cell side"><a href="#" class="ico ico-back uvc">뒤로</a></div>
+      <div class="cell middle">찜 목록</div>
+      <div class="cell side"><a onclick="showPopup(event)" href="#" class="ico ico-menu uvc">메뉴</a></div>
+    </header>
+
+    <div class="stack-layer">
+      <header class="header search">
+        <div class="cell side"></div>
+        <div class="cell middle">찜 목록 열었다</div>
+        <div class="cell side"><a onclick="hidePopup(event)" href="#" class="ico ico-close uvc">찾기</a></div>
+      </header>
+    </div>
+
+  </div>
+
+<script>
+  var $header = document.getElementById('header')
+  function showPopup(e) {
+    $header.classList.add('open')
+    e.preventDefault()
+  }
+  function hidePopup(e) {
+    $header.classList.remove('open')
+    e.preventDefault()
+  }
+</script>
+</body>
+</html>

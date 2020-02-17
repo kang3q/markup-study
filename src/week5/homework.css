@@ -25,6 +25,7 @@
 .modal .box {
   display: inline-block;
   width: 300px;
+  vertical-align: middle;
   background-color: #fff;
 }
 
