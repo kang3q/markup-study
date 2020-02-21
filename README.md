@@ -5,4 +5,4 @@
 ```
 $ npm run start
 ```
-> or [https://kang3q.github.io/markup-study/index.html](https://kang3q.github.io/markup-study/index.html)
+> or [https://kang3q.github.io/markup-study](https://kang3q.github.io/markup-study)
